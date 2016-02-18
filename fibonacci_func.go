@@ -3,6 +3,13 @@ package main
 import "fmt"
 
 func fibonacci() func() int {
+    var a,b int = 0,1;
+    return func() int {
+        var tmp = a;
+        a = b;
+        b = b+tmp;
+        return tmp;
+    };
 }
 
 func main() {
