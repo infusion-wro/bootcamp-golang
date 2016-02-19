@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GO in 5 minutes</title>
+
+		<meta name="description" content="Quick introduction to GO.">
+		<meta name="author" content="Marcin Dudek">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>GO in 5 minutes</h1>
+					<p>
+						<small>Created by Marcin <a href="http://infusion.com">Infusion</a></small>
+					</p>
+				</section>
+
+				<section class="fragments">
+					<h2>Some facts</h2>
+					<ul>
+						<li>Was created in Google</li>
+						<li class="fragment">C family of languages</li>
+						<li class="fragment">Statically typed</li>
+						<li class="fragment">Natively compiled</li>
+						<li class="fragment">Garbage Collection</li>
+						<li class="fragment">Concurency</li>
+					</ul>
+				</section>
+
+				<section class="fragments">
+					<h2>Composition over inheritance</h2>
+					<p>
+						No class keyword
+					</p>
+					<p class="fragment">
+						Is it OOP language?
+					</p>
+				</section>
+
+				<section class="fragments">
+					<h2>Build for concurency</h2>
+					<p>
+						goroutines
+					</p>
+					<p class="fragment">
+						channels
+					</p>
+					<aside class="notes">
+						goroutine is a function that can run concurrently with other goroutines. It is a lightweight thread of execution in which many goroutines execute in a single thread that enables more program performance and efficiency. The most important feature of goroutine is that it is managed and executed by Go runtime.
+						Go provides channels that enable communication between goroutines and the synchronization of their executions. With channels, you can send data from one goroutine to another.
+					</aside>
+				</section>
+				<section>
+					<h2>Some links</h2>
+					<ul>
+						<li><a href="http://golang.org/">golang.org</a></li>
+						<li><a href="https://github.com/golang/go">github project</a></li>
+						<li><a href="http://tour.golang.org/welcome/1">A Tour of Go</a></li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						Time to code!
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+
+	</body>
+</html>
