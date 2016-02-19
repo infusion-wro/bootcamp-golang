@@ -1,26 +1,27 @@
 package main
 
-import "fmt"
+// Fibonacci is an exported type that generates Fibonacci numbers
+type Fibonacci struct{}
 
-func Fibonacci(a int) int {
-    if(a == 0){
-        return 0;
-    }
-    if(a == 1){
-        return 1;
-    }
-    
-    return Fibonacci(a-1) + Fibonacci(a-2);
+// Get is a function which return n-th fibonacci number
+func (f Fibonacci) Get(n int) int {
+	if n == 0 {
+		return 0
+	}
+	if n == 1 {
+		return 1
+	}
+
+	return f.Get(n-1) + f.Get(n-2)
 }
 
-func main() {
-    var x int
-    fmt.Printf("Enter number: ")
-    if _,err:=fmt.Scanln(&x);err != nil || x < 0 {
-        fmt.Println("Invalid number!")
-        return;
-    }
-    
-    f := Fibonacci(x);
-    fmt.Println(f);
+// Generate is a function which generates consecutive numbers.
+func (f Fibonacci) Generate() func() int {
+	var a, b int = 0, 1
+	return func() int {
+		var tmp = a
+		a = b
+		b = b + tmp
+		return tmp
+	}
 }
