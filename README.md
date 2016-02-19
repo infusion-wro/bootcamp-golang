@@ -1,4 +1,6 @@
-# bootcamp-golang
+# Bootcamp Go
+Go lang [presentation](http://infusion-wro.github.io/bootcamp-golang/)
+
 We have two simple problems two solve.
 
 First assigment is to create function that for given number returns fibonacci number.
