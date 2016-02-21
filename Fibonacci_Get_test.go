@@ -32,7 +32,7 @@ func TestGetOtherCases(t *testing.T) {
 	for _, c := range cases {
 		got := fib.Get(c.in)
 		if got != c.expected {
-			t.Errorf("Expected %d, got %d", got, c.expected)
+			t.Errorf("Expected %d, got %d", c.expected, got)
 		}
 	}
 }

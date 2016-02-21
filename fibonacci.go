@@ -1,9 +1,9 @@
 package main
 
-// Fibonacci is an exported type that generates Fibonacci numbers
+// Fibonacci is an exported type that generates Fibonacci numbers.
 type Fibonacci struct{}
 
-// Get is a function which return n-th fibonacci number
+// Get is a function which return n-th number.
 func (f Fibonacci) Get(n int) int {
 	if n == 0 {
 		return 0
