@@ -3,6 +3,9 @@ Go lang [presentation](http://infusion-wro.github.io/bootcamp-golang/)
 
 We have two simple problems two solve.
 
-First assigment is to create function that for given number returns fibonacci number.
+## Fibonacci closure
+As a reminder n-th number
+Implement a fibonacci function that returns a function (closure) that returns successive fibonacci numbers.
 
-Second assigment is to implement a fibonacci function that returns a function (a closure) that returns successive fibonacci numbers.
+## GO rutines
+Finding missing number in array.
