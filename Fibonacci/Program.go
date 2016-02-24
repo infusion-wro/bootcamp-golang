@@ -11,7 +11,7 @@ func main() {
 	}
 
 	var fib Fibonacci
-	fmt.Printf("n-th number is %d\n", fib.Get(x))
+	fmt.Printf("n-th number is %d\n\n", fib.Get(x))
 
 	fmt.Println("Fibonacci Numbers:")
 	f := fib.Generate()

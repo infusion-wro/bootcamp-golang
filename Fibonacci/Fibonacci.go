@@ -1,6 +1,6 @@
 package main
 
-// Fibonacci is an exported type that generates Fibonacci numbers.
+// Fibonacci is an exported type that generates Fibonacci numbers
 type Fibonacci struct{}
 
 // Get is a function which return n-th number.
